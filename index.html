@@ -1,0 +1,304 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>
+      Personal Portfolio
+    </title>
+    <style>
+      html,
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      nav ul {
+        text-align: right;
+        position: fixed;
+        width: 100%;
+        background-color: #0f0c29;
+        margin-top: 0;
+        list-style-type: none;
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline-block;
+        margin: 50px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        text-align: center;
+        padding: 15px;
+        font-size: 2em;
+        color: darkkhaki;
+      }
+      li a:hover {
+        color: aliceblue;
+      }
+      #welcome-section {
+        background: #44a08d; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #093637,
+          #44a08d
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #093637,
+          #44a08d
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        top: 0;
+        min-height: 60vh;
+        padding-top: 45vh;
+      }
+      .intro h1 {
+        font-size: 5em;
+      }
+      .intro p {
+        font-size: 2em;
+        color: bisque;
+      }
+      .work {
+        margin-top: -30px;
+        padding: 25px;
+        background: #c31432; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #240b36,
+          #c31432
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        padding-top: 65px;
+        min-height: 90vh;
+      }
+      #work-head {
+        font-size: 3em;
+        color: ghostwhite;
+        font-weight: bolder;
+      }
+      .flex-con {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: row wrap;
+        align-content: space-between;
+      }
+      .project-tile {
+        text-decoration: none;
+        color: azure;
+        text-align: center;
+        align-content: center;
+        margin: auto;
+      }
+      .pro-title {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 260px;
+        width: 280px;
+        margin: 35px 45px;
+        text-align: center;
+        background: #3c3b3f; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #605c3c,
+          #3c3b3f
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        padding: auto;
+        background: linear-gradient(
+          to right,
+          #605c3c,
+          #3c3b3f
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        align-content: center;
+      }
+      #show-all {
+        display: block;
+        height: 30px;
+        width: 200px;
+        margin: auto;
+        color: aliceblue;
+        padding: 10px;
+        border: #0f0c29 solid 2px;
+        text-decoration: none;
+        background-color: darkgreen;
+        font-weight: bolder;
+      }
+      #show-all:hover {
+        background-color: black;
+      }
+      #contact {
+        min-height: 90vh;
+        padding-top: 70px;
+        background: #5a3f37; /* fallback for old browsers */
+        background: -webkit-linear-gradient(
+          to right,
+          #2c7744,
+          #5a3f37
+        ); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(
+          to right,
+          #2c7744,
+          #5a3f37
+        ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+      #con-head {
+        font-size: 3em;
+        color: #0f0c29;
+        font-weight: bolder;
+        padding: 20px;
+      }
+      #contact > p {
+        font-size: 1.3em;
+        color: antiquewhite;
+        margin-bottom: 30px;
+      }
+      .con-details {
+        margin: 30px;
+        padding: 50px;
+        text-decoration: none;
+        font-size: 1.5em;
+        font-weight: bold;
+        color: darkred;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#welcome-section">Welcome</a></li>
+        <li><a href="#projects">Work</a></li>
+        <li><a href="#contact">About</a></li>
+      </ul>
+    </nav>
+    <div>
+      <section id="welcome-section" class="intro">
+        <h1>Hey , I am Manya</h1>
+        <p>A web developer and a coder.</p>
+      </section>
+    </div>
+    <div>
+      <section id="projects" class="work">
+        <p id="work-head">These are some of my projects...</p>
+        <br /><br />
+        <div class="flex-con">
+          <a
+            href="https://manyagoyal15.github.io/TributeFcc/"
+            target="_blank"
+            class="project-tile"
+            ><div class="pro-title">
+              <h1>Tribute Page</h1>
+            </div>
+          </a>
+
+          <a
+            href="https://manyagoyal15.github.io/cxi-surveyform/"
+            target="_blank"
+            class="project-tile"
+            ><div class="pro-title">
+              <h1>Survey-Form</h1>
+            </div></a
+          >
+
+          <a
+            href="https://manyagoyal15.github.io/Documentation-fcc/"
+            target="_blank"
+            class="project-tile"
+            ><div class="pro-title"><h1>Python Documentation</h1></div>
+          </a>
+
+          <a
+            href="https://manyagoyal15.github.io/Calculator/"
+            target="_blank"
+            class="project-tile"
+            ><div class="pro-title">
+              <h1>Calculator</h1>
+            </div></a
+          >
+
+          <a
+            href="https://manyagoyal15.github.io/sap-1/"
+            target="_blank"
+            class="project-tile"
+            ><div class="pro-title"><h1>SAP Hackathon Website</h1></div></a
+          >
+
+          <a href="" target="_blank" class="project-tile"
+            ><div class="pro-title"><h1>My Portfolio</h1></div></a
+          >
+          <br /><br />
+          <br />
+        </div>
+        <br />
+        <a href="https://codepen.io/manyagoyal15" id="show-all" target="_blank"
+          >Show All</a
+        >
+      </section>
+    </div>
+    <div>
+      <section id="contact" class="contact">
+        <h1 id="con-head">Lets work Together...</h1>
+        <p><b>I will be glad to work with you.</b></p>
+        <br />
+        <ul style="list-style-type:none;">
+          <li>
+            <a
+              href="https://github.com/manyagoyal15"
+              target="_blank"
+              class="con-details"
+              ><i
+                class="fa fa-github"
+                aria-hidden="true"
+                style="font-size:48px;"
+              ></i>
+              Github
+            </a>
+          </li>
+          <br />
+          <li>
+            <a
+              href="https://www.linkedin.com/in/manya-goyal-7536b3182/"
+              target="_blank"
+              class="con-details"
+              ><i
+                class="fa fa-linkedin-square"
+                aria-hidden="true"
+                style="font-size:48px;"
+              ></i
+              >LinkedIn</a
+            >
+          </li>
+          <br />
+          <li>
+            <a
+              href="https://www.facebook.com/manya.goel.5209"
+              target="_blank"
+              class="con-details"
+              ><i
+                class="fa fa-facebook-official"
+                aria-hidden="true"
+                style="font-size:48px;"
+              ></i
+              >Facebook</a
+            >
+          </li>
+          <br />
+        </ul>
+      </section>
+    </div>
+  </body>
+</html>
